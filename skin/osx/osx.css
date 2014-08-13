@@ -118,37 +118,10 @@
     -moz-border-image: none !important;
 }
 
-/* Keep the close button at a safe distance from the tab label. */
+/* Hide the close button */
 .tab-close-button {
-    -moz-image-region: auto !important;
-    display: -moz-box;
-    margin-left: 3px;
-    margin-top: 1px;
-    background-image: url("resource://verticaltabs/skin/osx/closetab.svg") !important;
-    background-position: center right;
-    background-size: contain;
-    background-repeat: no-repeat;
-    list-style-image: none !important;
-    width: 14px;
-    height: 14px;
-    opacity: 0.27;  /* turn black into #b9b9b9 */
-}
-.tab-close-button:active {
-    opacity: 0.46;  /* turn black into #8a8a8a */
-}
-.tabbrowser-tab[selected="true"] .tab-close-button,
-.tabbrowser-tab[multiselect="true"] .tab-close-button {
-    background-image: url("resource://verticaltabs/skin/osx/closetab-white.svg");
-    opacity: 0.8;
-}
-
-.tabbrowser-tab[selected="true"] .tab-close-button:hover,
-.tabbrowser-tab[multiselect="true"] .tab-close-button:hover {
-    opacity: 1;
-}
-
-.tabbrowser-tab:not(:hover):not([selected="true"]) .tab-close-button {
-    visibility: collapse !important;
+    display: none;
+    visibility: none;
 }
 
 /* Always display the favicon at 100% opacity */
