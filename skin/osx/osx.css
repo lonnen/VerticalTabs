@@ -153,8 +153,8 @@
     height: 10px;
     position: absolute !important;
     color: #29B4FF;
-    line-height: 15px;
-    font-size: 150% !important;
+    font-size: 133% !important;
+    margin-top: -18px;
 }
 
 /* Tab label is without special decoration except when selected: then
