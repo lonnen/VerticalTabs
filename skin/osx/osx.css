@@ -147,14 +147,12 @@
     color: #F1F1F1 !important;
 }
 
-.tabbrowser-tab[pinned][titlechanged]:after {
-    content: '●' !important;
-    width: 18px;
-    height: 10px;
-    position: absolute !important;
-    color: #29B4FF;
-    font-size: 133% !important;
-    margin-top: -18px;
+/* highlight the box but keep a constant width
+   implicitly relies on tab padding of 3px */
+.tabbrowser-tab[pinned][titlechanged] {
+    border-left: 2px solid #29B4FF;
+    -moz-box-sizing: border-box;
+    padding-left: 1px !important;
 }
 
 /* Tab label is without special decoration except when selected: then
