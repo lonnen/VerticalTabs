@@ -129,10 +129,10 @@
     opacity: 1.0 !important;
 }
 
-/* Ensure app tab labels are not too close to the icon. */
-.tab-label[pinned] {
-    margin: 2px 6px !important;
-    position: relative !important;
+/* Hide app labels */
+.tab-label {
+    display: none;
+    visibility: none;
 }
 
 .tabbrowser-tab[pinned]:before {
