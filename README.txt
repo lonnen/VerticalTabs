@@ -1,24 +1,8 @@
-Vertical Tabs for Firefox 29 and beyond
-=======================================
+Vertical Tabs 2
+===============
 
-This Firefox add-on arranges tabs in a vertical rather than horizontal
-fashion.  It is heavily inspired by and borrows ideas from the excellent
-Tree Style Tab add-on.
+A fork of https://github.com/darrinhenein/VerticalTabs that reduces the tab bar to only display favicons and fixes some issues that crop up at narrow widths.
 
-Download & Install: http://people.mozilla.org/~rcampbell/VerticalTabs.xpi
-
-Goals:
-
-* Ability to arrange tabs in groups (instead of arbitrary trees) plus
-  some group-related features (collapse group, tab previews, etc.)
-
-* Very few other features and hopefully little or no preference settings.
-  Instead a good JavaScript API might be provided for other extensions
-  (e.g. JetPack SDK based) to provide additional features.
-
-* Native look and feel.
-
-* Readable and maintainable code, taking latest Mozilla practices into
-  account.  No eval() hacks.
+Download & Install from the releases page: https://github.com/lonnen/VerticalTabs/releases/
 
 License: Mozilla Public License Version 1.1
