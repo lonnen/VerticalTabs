@@ -41,6 +41,11 @@ statuspanel:-moz-locale-dir(ltr):not([mirror]) .statuspanel-inner {
     visibility: collapse;
 }
 
+/* default to the width of a favicon */
+#verticaltabs-box {
+    width: 30px;
+}
+
 /* Undo a bunch of stuff for app tabs */
 .tabbrowser-tabs[positionpinnedtabs] > .tabbrowser-tab[pinned] {
     position: inherit !important;
