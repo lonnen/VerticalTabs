@@ -43,13 +43,9 @@
 
 .tabbrowser-tab:not([selected="true"]):hover {
     margin: 0 !important;
-    padding: 1px 0 !important;
+//    padding: 1px 0 !important;
 }
 
-
-.tabbrowser-tab:not(:hover):not([selected="true"]) .tab-close-button {
-    visibility: collapse !important;
-}
 
 /* Keep the close button at a safe distance from the tab label. */
 .tab-close-button {
