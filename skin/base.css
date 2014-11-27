@@ -89,8 +89,8 @@ statuspanel:-moz-locale-dir(ltr):not([mirror]) .statuspanel-inner {
 
 .tabbrowser-tab {
     pointer-events: auto ! important;
-    width: 30px ! important;
-    min-width: 30px ! important;
+    width: 16px ! important;
+    min-width: 16px ! important;
     max-width: 100% ! important;
 }
 
