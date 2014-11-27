@@ -43,7 +43,7 @@ statuspanel:-moz-locale-dir(ltr):not([mirror]) .statuspanel-inner {
 
 /* default to the width of a favicon */
 #verticaltabs-box {
-    width: 30px;
+    width: 16px;
 }
 
 /* Undo a bunch of stuff for app tabs */
