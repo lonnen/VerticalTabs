@@ -121,14 +121,6 @@ VerticalTabs.prototype = {
         leftbox.id = "verticaltabs-box";
         browserbox.insertBefore(leftbox, contentbox);
 
-        let splitter = document.createElementNS(NS_XUL, "splitter");
-        splitter.id = "verticaltabs-splitter";
-        splitter.className = "chromeclass-extrachrome";
-        browserbox.insertBefore(splitter, contentbox);
-        // Hook up event handler for splitter so that the width of the
-        // tab bar is persisted.
-        splitter.addEventListener("mouseup", this, false);
-
         // Move the tabs next to the app content, make them vertical,
         // and restore their width from previous session
         if (Services.prefs.getBoolPref("extensions.verticaltabs.right")) {
@@ -220,11 +212,9 @@ VerticalTabs.prototype = {
             }
 
             // Remove all the crap we added.
-            splitter.removeEventListener("mouseup", this, false);
             browserbox.removeChild(leftbox);
-            browserbox.removeChild(splitter);
             browserbox.dir = "normal";
-            leftbox = splitter = null;
+            leftbox = null;
         });
     },
 
@@ -320,9 +310,6 @@ VerticalTabs.prototype = {
             this.onTabOpen(aEvent);
             this.setPinnedSizes();
             return;
-        case "mouseup":
-            this.onMouseUp(aEvent);
-            return;
         case "popupshowing":
             this.onPopupShowing(aEvent);
             return;
@@ -334,12 +321,6 @@ VerticalTabs.prototype = {
 
     onTabOpen: function(aEvent) {
         this.initTab(aEvent.target);
-    },
-
-    onMouseUp: function(aEvent) {
-        if (aEvent.target.getAttribute("id") == "verticaltabs-splitter") {
-            this.onTabbarResized();
-        }
     },
 
     onPopupShowing: function(aEvent) {

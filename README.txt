@@ -1,8 +1,6 @@
-Vertical Tabs 2
-===============
+Favicon Tabs
+============
 
-A fork of https://github.com/darrinhenein/VerticalTabs that reduces the tab bar to only display favicons and fixes some issues that crop up at narrow widths.
-
-Download & Install from the releases page: https://github.com/lonnen/VerticalTabs/releases/
+A fork of https://github.com/lonnen/VerticalTabs that only displays favicons on the left hand side
 
 License: Mozilla Public License Version 1.1

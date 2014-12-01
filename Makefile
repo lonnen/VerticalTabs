@@ -27,8 +27,8 @@ SOURCES = \
 	verticaltabs.jsm \
 	$(NULL)
 
-all: VerticalTabs.xpi
+all: FaviconTabs.xpi
 
-VerticalTabs.xpi: $(SOURCES)
+FaviconTabs.xpi: $(SOURCES)
 	rm -f ../$@
 	zip -9r ../$@ $(SOURCES)

@@ -105,8 +105,8 @@
 
 /* Keep the close button at a safe distance from the tab label. */
 .tab-close-button {
-    display: -moz-box;
-    margin-left: 3px;
+    display: none;
+    visibility: none;
 }
 
 
