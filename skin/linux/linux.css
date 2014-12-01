@@ -53,10 +53,8 @@
 
 /* Keep the close button at a safe distance from the tab label. */
 .tab-close-button {
-    display: -moz-box;
-    margin-left: 3px !important;
-    margin-right: 1px !important;
-    margin-bottom: -3px !important;
+    visibility: none;
+    display: none;
 }
 
 
