@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   <Description about="urn:mozilla:install-manifest">
-    <em:id>lonnen@mozilla.com</em:id>
+    <em:id>jonathan@jonathan.is</em:id>
     <em:type>2</em:type>
     <em:bootstrap>true</em:bootstrap>
-    <em:name>Vertical Tabs 2: favicon boogaloo</em:name>
+    <em:name>Favicon Tabs</em:name>
     <em:version>0.1</em:version>
-    <em:homepageURL>https://github.com/lonnen/VerticalTabs</em:homepageURL>
-    <em:creator>Lonnen (all tha UI love)</em:creator>
+    <em:homepageURL>https://github.com/jedahan/FaviconTabs</em:homepageURL>
+    <em:creator>Jonathan Dahan (some linux UI love)</em:creator>
+    <em:contributor>Lonnen (all tha UI love)</em:contributor>
     <em:contributor>Darrin Henein</em:contributor>
     <em:contributor>Philipp von Weitershausen (original author)</em:contributor>
     <em:contributor>Vlad Vukicevic (second original author)</em:contributor>
@@ -15,12 +16,11 @@
     <em:contributor>bb10 (Linux and Windows theme contributions)</em:contributor>
     <em:contributor>Frank Yan (various theming fixes)</em:contributor>
     <em:contributor>Rob Campbell (some UI love)</em:contributor>
-    <em:contributor>Jonathan Dahan (some linux UI love)</em:contributor>
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id> <!-- Firefox -->
-        <em:minVersion>29.0a1</em:minVersion>
-        <em:maxVersion>33.0</em:maxVersion>
+        <em:minVersion>33.1</em:minVersion>
+        <em:maxVersion>33.1</em:maxVersion>
       </Description>
     </em:targetApplication>
   </Description>
